@@ -12,7 +12,7 @@ Route::prefix('api/v1/web')->name('api.v1.')->group(function () {
     Route::get('/health', function () {
         return response()->json([
             'status' => 'ok',
-            'message' => 'Azka API is running',
+            'message' => 'Kolong API is running',
             'timestamp' => now()->toISOString(),
         ]);
     })->name('health');
@@ -25,7 +25,7 @@ Route::prefix('api/v1')->name('api.v1.')->group(function () {
     Route::get('/health', function () {
         return response()->json([
             'status' => 'ok',
-            'message' => 'Azka API is running',
+            'message' => 'Kolong API is running',
             'timestamp' => now()->toISOString(),
         ]);
     })->name('health');
